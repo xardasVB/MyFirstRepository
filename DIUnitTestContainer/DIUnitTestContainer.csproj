@@ -51,9 +51,16 @@
     <Compile Include="IRegisterType.cs" />
     <Compile Include="DIContainerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResolverType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DIContainerDLL\DIContainerDLL.csproj">
+      <Project>{a632debc-b5a0-4754-87b9-7a102b285569}</Project>
+      <Name>DIContainerDLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
