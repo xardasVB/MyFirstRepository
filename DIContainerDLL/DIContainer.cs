@@ -8,6 +8,12 @@ namespace DIContainerDLL
 {
     public class DIContainer
     {
-        
+        public IDictionary<Type, Type> RegisterTypes { get; private set; }
+
+        public DIContainer()
+        {
+            RegisterTypes = new Dictionary<Type, Type>();
+        }
+
     }
 }
